@@ -9,7 +9,8 @@ components:
     build:
       - shell: sudo mkdir -p /app
       - shell: sudo mvn clean package
-      - shell: sudo cp -rf target/SpringBoot.jar /app
+      - shell: sudo cp -rf spring-app/target/SpringBoot.jar /app
       - shell: sudo /usr/local/bin/fpm -s dir -n spring-app --iteration $(date "+%Y%m%d%H%M%S") -t deb /app
     artifacts:
       - location: "*.deb"
+
