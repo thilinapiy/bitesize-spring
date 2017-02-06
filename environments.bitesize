@@ -1,0 +1,13 @@
+project: spring-dev
+environments:
+  - name: production
+    namespace: spring-dev
+    deployment:
+      method: rolling-upgrade
+    services:
+      - name: spring-app
+        external_url: spring.dev-bite.io
+        port: 8080 
+        ssl: "false"
+        replicas: 2
+

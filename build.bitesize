@@ -1,0 +1,15 @@
+# see https://mycloud.atlassian.net/wiki/display/BITE/Jenkins
+project: spring-dev
+components:
+  - name: spring-app
+    os: linux
+    repository:
+      git: git@github.com:thilinapiy/SpringBoot.git
+      branch: master
+    build:
+      - shell: sudo mkdir -p /app
+      - shell: sudo cp -rf * /app
+      - shell; sudo cd /app
+      - shell; sudo mvn clean package
+    artifacts:
+      - location: "/app/target/SpringBoot.java"
