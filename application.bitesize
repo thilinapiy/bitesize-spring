@@ -9,5 +9,5 @@ applications:
         origin:
           build: spring-app
         version: 1.0
-    command: "java -jar /app/*.jar"    
+    command: "java -jar /app/SpringBoot-1.0.0.jar"
  
