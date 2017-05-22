@@ -1,5 +1,4 @@
-# see https://mycloud.atlassian.net/wiki/display/BITE/Jenkins
-project: spring-dev
+project: spring
 components:
   - name: spring-app
     os: linux

@@ -1,4 +1,4 @@
-project: spring-dev
+project: spring
 environments:
   - name: production
     namespace: spring-dev
